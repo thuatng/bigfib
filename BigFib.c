@@ -63,8 +63,6 @@ int bigFib(int n, int maxSize, unsigned **bNP) {
 		return -1;
 	}
 		
-		
-		
 	// ... fill in code here ****
 	if ((n==1) && (maxSize>0))
 	{
