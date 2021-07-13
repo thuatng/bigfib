@@ -3,7 +3,7 @@
 ".\flash\inithw.o"
 ".\flash\73x_it.o"
 ".\flash\retarget.o"
-"C:\Keil_v5\ARM\RV31\LIB\ST\STR73xR.LIB"
+"..\Keil_v5\ARM\RV31\LIB\ST\STR73xR.LIB"
 ".\flash\bigadd.o"
 ".\flash\bigfib.o"
 ".\flash\main.o"

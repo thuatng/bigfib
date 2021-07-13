@@ -42,7 +42,7 @@ int main() {
 
 //	////////////////*****************3****************///////////////////
 	rv = bigFib(0, 0, &fibResP);
-	lsw =  *((fibResP)+1);
+	
 	size = *((fibResP));
 	printf("F0 requested. F%d was calculated with size %u.\n", rv, size); 
 	if(!(rv==0x0 && size==0) )
@@ -60,6 +60,14 @@ int main() {
 
 //	////////////////****************5*****************///////////////////
 	rv = bigFib(3, 1, &fibResP);
+	lsw =  *((fibResP)+1);
+	size = *((fibResP));
+	printf("F3 requested. F%d was calculated with size %u.\n", rv, size); 
+	if(!(rv==0x3 && lsw==2) )
+		halt();
+	free(fibResP);
+	//////////////////////// 5b
+	rv = bigFib(3, 6, &fibResP);
 	lsw =  *((fibResP)+1);
 	size = *((fibResP));
 	printf("F3 requested. F%d was calculated with size %u.\n", rv, size); 
